@@ -126,7 +126,7 @@ HttpWindowBlinds.prototype = {
 
 		this.service
 			.getCharacteristic(Characteristic.TargetPosition)
-			.on('get', this.getTargetPosition.bind(this))
+			.on('get', this.getCurrentPosition.bind(this))
 			.on('set', this.setTargetPosition.bind(this));
 
 		this.service
