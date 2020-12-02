@@ -32,7 +32,7 @@ function HttpWindowBlinds(log, config) {
 	
 	this.currentPosition = 0;
 	this.targetPosition = 100;
-	
+	console.log("jake")
 	this.positionState = Characteristic.PositionState.STOPPED;
 	this.service.setCharacteristic(Characteristic.PositionState, Characteristic.PositionState.STOPPED);
 }	
